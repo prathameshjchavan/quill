@@ -1,4 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
 	return (
@@ -12,6 +14,14 @@ export default function Home() {
 				Chat with your <span className="text-blue-600">documents</span> in
 				seconds.
 			</h1>
+			<p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
+				Quill allows you to have conversation with any PDF document. Simply
+				upload your file and start asking questions right away.
+			</p>
+
+			<Link href="/" target="_blank" className="flex">
+				Get Started <ArrowRight className="ml-2 h-5 w-5" />
+			</Link>
 		</MaxWidthWrapper>
 	);
 }
