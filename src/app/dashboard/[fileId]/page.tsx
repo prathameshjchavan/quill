@@ -34,7 +34,7 @@ const Page = async ({ params: { fileId } }: Props) => {
 
 				{/* Right Side */}
 				<div className="shrink-0 flex-[0.75] border-t border-gray-200 lg:w-96 lg:border-l lg:border-t-0">
-					<ChatWrapper />
+					<ChatWrapper fileId={fileId} />
 				</div>
 			</div>
 		</div>
