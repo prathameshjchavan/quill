@@ -184,6 +184,11 @@ const PdfRenderer = ({ url }: Props) => {
 								scale={scale}
 								rotate={rotation}
 								pageNumber={currPage}
+								loading={
+									<div className="flex justify-center">
+										<Loader2 className="my-24 h-6 w-6 animate-spin" />
+									</div>
+								}
 							/>
 						</Document>
 					</div>
